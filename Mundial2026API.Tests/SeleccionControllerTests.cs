@@ -27,6 +27,7 @@ public class SeleccionControllerTests
         // Assert
         selecciones.Should().NotBeNull();
         selecciones.Should().HaveCount(5);
+        resultado.Should().BeFalse();
     }
 
     [Fact]
@@ -39,6 +40,7 @@ public class SeleccionControllerTests
         // Assert
         seleccion.Should().NotBeNull();
         seleccion!.Nombre.Should().Be("España");
+        resultado.Should().BeFalse();
     }
 
     [Fact]
